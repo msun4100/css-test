@@ -1,1 +1,13 @@
-a,button{border-radius:7px;font-family:inherit;font-size:12px;text-transform:uppercase;padding:5px 10px;background-color:#9acd32;font-weight:500;color:#fff}a{text-decoration:none}button{border:0}
+h1 {
+  color: red;
+}
+@media screen and (min-width: 500px) and (max-width: 690px) {
+  h1 {
+    color: #ff0;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 1120px) {
+  h1 {
+    color: green;
+  }
+}
