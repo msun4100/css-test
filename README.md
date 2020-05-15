@@ -1,2 +1,8 @@
-# css-test
-tests flex, grid
+## SCSS:
+
+- [ ] Variables
+- [ ] Nesting
+- [ ] Partials
+- [ ] Mixins
+- [ ] Extend
+- [ ] Responsive Mixins
