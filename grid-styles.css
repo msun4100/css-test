@@ -4,10 +4,8 @@
   display: grid;
   gap: 5px;
   height: 250vh;
-  grid-template-columns: repeat(4, 100px);
-  grid-template-rows: repeat(2, 200px);
-  grid-auto-rows: 100px;
-  grid-auto-flow: row; /* flex-direction 같은 */
+  grid-template-columns: repeat(5, minmax(100px, 1fr));
+  grid-template-rows: repeat(4, 100px);
   grid-auto-columns: 100px;
 }
 
