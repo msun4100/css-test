@@ -1,0 +1,44 @@
+.wrapper {
+  background-color: aqua;
+  display: flex;
+  /* row, col 에 따라 main axis 가 정해짐 default = row */
+  flex-direction: row;
+  height: 200vh;
+
+  /* main axis */
+  /* row일땐 가로축 col일땐 세로축 수정할때 justify-content 사용 */
+  justify-content: space-around;
+
+  /* line이 나뉠때 default = space-around*/
+  align-content: flex-start;
+
+  /* cross axis default=flex-start */
+  align-items: flex-start;
+
+  flex-wrap: nowrap; /* default nowrap = 한줄에 꾸겨넣음 width 무시 */
+}
+.box {
+  background: blue;
+  /* width: 200px; */
+  /* child에서 적용. element에게 Main Axis에 따른 initial size를 정해줌, shrink, grow 이전에 */
+  flex-basis: 200px;
+  height: 200px;
+  color: white;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box:nth-child(2) {
+  background: #000000;
+  /* default=1, nowrap인 컨테이너안에서 줄어드는 비율 */
+  /* flex-shrink: 2;  */
+
+  /* default=0, shrink반대, width나 height를 고려해 남는 공간을 얼마의 비율로 차지하나 */
+  flex-grow: 2;
+}
+
+.box:nth-child(3) {
+  flex-grow: 1; /* 2nd box가 2면 남는공간을 3등분해 3/1을 가져가겠다는 의미 */
+}
