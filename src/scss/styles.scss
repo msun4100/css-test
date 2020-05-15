@@ -1,6 +1,21 @@
+@import "_variables";
+
 body {
-  background: peru;
+  background: $bg;
   a {
     color: blue;
   }
+}
+
+.box {
+  h1 {
+    color: #000000;
+    &:hover {
+      color: blue;
+    }
+  }
+}
+h1 {
+  color: #ffffff;
+  font-size: $title;
 }
